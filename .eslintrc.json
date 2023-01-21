@@ -24,6 +24,7 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
+  "ignorePatterns": ["**/*.css", "**/*.scss"],
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
