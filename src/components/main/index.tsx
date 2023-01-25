@@ -1,20 +1,20 @@
+import * as S from './styles'
+
 const Main = () => (
-  <main className="flex flex-col bg-default-blue text-white h-[100%] w-[100%] text-center items-center justify-self-center p-[8rem]">
-    <img
+  <S.Wrapper>
+    <S.Logo
       src="/logo.svg"
-      className="w-[25rem] h-[25rem]"
       alt="Imagem de um átomo e React Avançado escrito ao lado."
     />
-
-    <h1>React Avançado</h1>
-    <h2> TypeScript, ReactJS, NextJS e Styled Components </h2>
-
-    <img
-      className="min-w-[30rem] max-w-[100rem] h-[85%] mt-[3rem]"
+    <S.Title>React Avançado</S.Title>
+    <S.Description>
+      TypeScript, ReactJS, NextJS e Styled Components
+    </S.Description>
+    <S.Illustration
       src="/hero-illustration.svg"
-      alt=""
+      alt="Um desenvolvedor de frente para uma tela com código."
     />
-  </main>
+  </S.Wrapper>
 )
 
 export default Main
