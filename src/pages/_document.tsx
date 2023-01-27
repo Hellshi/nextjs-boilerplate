@@ -4,6 +4,7 @@ import Document, {
   Main,
   NextScript
 } from 'next/document'
+import Head from 'next/head'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -23,6 +24,9 @@ export default class MyDocument extends Document {
         ...initialProps,
         styles: (
           <>
+            <Head>
+              <link rel="manifest" href="/manifest.json" />
+            </Head>
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>
