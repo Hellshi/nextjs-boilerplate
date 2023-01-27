@@ -10,7 +10,7 @@
     "test:watch": "jest --watch",
     "lint": "eslint src",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -s ./public"
   },
   "lint-staged": {
     "src/**/*": [
