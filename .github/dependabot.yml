@@ -1,6 +1,16 @@
 name: ci
 on: [pull_request]
 
+version: 2
+updates:
+  # Configuration for Dockerfile
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      # Disable all pull requests for Docker dependencies
+    open-pull-requests-limit: 0
+
 jobs:
   build:
     runs-on: ubuntu-latest
