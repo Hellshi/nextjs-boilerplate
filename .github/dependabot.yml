@@ -1,7 +1,6 @@
+version: 2
 name: ci
 on: [pull_request]
-
-version: 2
 updates:
   # Configuration for Dockerfile
   - package-ecosystem: "docker"
