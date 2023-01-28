@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 Ok, first things first. We have a whole lot of dependencies here. This project includes: 
+
   TypeScript
   NextJS
   Styled Components
